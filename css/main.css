@@ -1,0 +1,412 @@
+/* Basis styles */
+
+@font-face {
+    font-family: 'Antique-Book-Cover';
+    src: url('Antique-Book-Cover.ttf.woff') format('woff'),
+    url('Antique-Book-Cover.ttf.svg#Antique-Book-Cover') format('svg'),
+    url('Antique-Book-Cover.ttf.eot'),
+    url('Antique-Book-Cover.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Besom Extended';
+    src: url('Besom.eot');
+    src: url('Besom.eot?#iefix') format('embedded-opentype'),
+    url('Besom.woff2') format('woff2'),
+    url('Besom.woff') format('woff'),
+    url('Besom.ttf') format('truetype'),
+    url('Besom.svg#Besom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-variant: normal;
+    text-decoration: none;
+}
+
+body {
+    margin: 0 auto;
+    background-image: url(wood.jpg);
+
+    a {
+        color: lawngreen;
+    }
+}
+
+a {
+    font-family: 'roboto';
+    color: white;
+}
+
+.billede {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* Navigation */
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    margin-top: 120px;
+}
+
+nav ul li {}
+
+
+.dropdown > ul {
+    margin-top: 10px;
+    display: none;
+}
+
+.dropdown > ul li {
+    white-space: nowrap;
+}
+
+.dropdown > ul li a {
+    color: white;
+    font-size: 1.8em;
+}
+
+.dropdown:hover > ul {
+    display: block;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'Luckiest guy';
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 3.5em;
+}
+
+nav a:hover {
+    color: white;
+    text-decoration: line-through;
+}
+
+
+nav {
+    height: 0;
+    margin-bottom: 0;
+    overflow: scroll;
+}
+
+/* Navigation slut */
+
+h1 {
+    font-family: 'luckiest guy';
+    color: black;
+    text-transform: uppercase;
+    font-size: 5em;
+    text-align: center;
+    color: #ccc7b6;
+
+
+}
+
+h2 {
+    font-family: 'luckiest guy';
+    margin-top: 40px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 2em;
+    color: #ccc7b6;
+
+}
+
+p {
+    color: #ccc7b6;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: 'Roboto';
+    margin-top: 30px;
+    margin-bottom: 10px;
+    line-height: 0.5;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    color: black;
+}
+
+section {
+    margin-bottom: 70px;
+    border-bottom: 3px solid #ccc7b6 padding-bottom: 20px;
+}
+
+#content {
+    max-width: 1200px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin: auto;
+
+}
+
+.image {
+    width: 100%;
+}
+
+
+/* Navigation_mobile */
+
+#nav_dropdown_open {
+    height: 60px;
+    width: 60px;
+    background-color: #0444BF;
+    border-radius: 50%;
+    position: fixed;
+    top: 15px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+
+#nav_dropdown_close {
+    height: 60px;
+    width: 60px;
+    background-color: #0444BF;
+    border-radius: 50%;
+    position: fixed;
+    top: 15px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.hidden_menu_icon {
+    visibility: hidden;
+}
+
+.full_menu {
+    background-image: url(natureisgut.jpg);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    transition: 1s;
+}
+
+.image {
+    width: 100%;
+}
+
+.margintop {
+    margin-top: 40px;
+}
+
+#splash {
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+footer {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+#open_01 {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin-left: 15px;
+    margin-bottom: 7px;
+    margin-top: 18px;
+}
+
+#open_02 {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin-left: 15px;
+    margin-bottom: 7px;
+}
+
+#open_03 {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin-left: 15px;
+    margin-bottom: 7px;
+}
+
+#close_01 {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin-left: 11px;
+    margin-bottom: 14px;
+    margin-top: 20px;
+
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+#close_02 {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin-left: 11px;
+
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-5px, -8px);
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    margin: 5px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #F5F5DC;
+}
+
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.knapper {
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0.5vw 1vw;
+    border: 2px solid #ccc7b6;
+    transition: all 0.2s;
+    display: inline-block;
+}
+
+.knap:hover {
+    background: #0444BF;
+    text-decoration: none;
+}
+
+#knap {
+    cursor: pointer;
+    font-size: 25px;
+    padding: 0.5vw 1vw;
+    border: 2px solid #ccc7b6;
+    transition: all 0.2s;
+    display: inline-block;
+    text-align: 0 auto;
+    margin-top: 2vw;
+}
+
+#knap:hover {
+    background: #0444BF;
+    text-decoration: none;
+}
+
+.puls {
+    animation-name: puls_kf;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes puls_kf {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/*ABOUT side*/
+
+.arrow {
+    background-image: url(backarrow.png);
+    background-size: 100%;
+    width: 5vw;
+    height: 5vw;
+    top: 10vw;
+    left: 10vw;
+}
+
+.about_header {
+    font-family: 'luckiest guy', sans-serif;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #ccc7b6;
+    text-align: center;
+    margin-left: auto;
+    padding-top: px;
+    width: 100%;
+    font-size: 5em;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+#about_me {
+    font-family: , sans-serif;
+    margin: 50px auto;
+    font-size: 2em;
+    letter-spacing: 2px;
+    max-width: 700px;
+    color: #ccc7b6;
+    line-height: 1.8vw;
+}
+
+/*BESKRIVELSE side*/
+
+.skitser {
+    float: left;
+    width: 30%;
+    padding: 5px;
+    transform: scale(0.9)
+}
